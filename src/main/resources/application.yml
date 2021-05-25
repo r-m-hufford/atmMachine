@@ -3,18 +3,11 @@
 spring:
   profile: local
   datasource:
-    password:
-    url:
-    username:
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: create
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL5Dialect
-    show-sql: true
-server:
-  port: 8080
-
 ---

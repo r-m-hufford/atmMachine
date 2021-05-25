@@ -1,4 +1,4 @@
-package com.bank.atmapi.configs;
+package com.bank.atmapi.configuration;
 
 
 import com.zaxxer.hikari.HikariConfig;
