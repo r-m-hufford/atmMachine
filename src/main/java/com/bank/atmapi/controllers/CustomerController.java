@@ -21,7 +21,7 @@ public class CustomerController {
     }
 
     @PostMapping("add")
-    public ResponseEntity<Customer> add(@RequestParam Customer customer){
+    public ResponseEntity<Customer> add(@RequestBody Customer customer){
         return new ResponseEntity<Customer>(service.add(customer), HttpStatus.CREATED);
     }
 
@@ -36,7 +36,7 @@ public class CustomerController {
     }
 
     @PutMapping("{id}")
-    public ResponseEntity<Customer> update(@RequestParam Customer customer, @PathVariable Long id){
+    public ResponseEntity<Customer> update(@RequestBody Customer customer, @PathVariable Long id){
         return new ResponseEntity<>(service.update(customer, id), HttpStatus.OK);
     }
 
