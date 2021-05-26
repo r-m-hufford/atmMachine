@@ -1,4 +1,4 @@
-package com.bank.atmapi.configuration;
+/*package com.bank.atmapi.configuration;
 
 
 import com.zaxxer.hikari.HikariConfig;
@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Profile;
 import javax.sql.DataSource;
 
 @Configuration
-@Profile({"local"})
+@Profile("local")
 public class DataSourceConfiguration {
 
     private static final String USER_NAME = System.getenv("DB_USERNAME");
@@ -29,4 +29,4 @@ public class DataSourceConfiguration {
 
         return new HikariDataSource(hikariConfig);
     }
-}
+}*/
